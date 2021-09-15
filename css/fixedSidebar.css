@@ -1,0 +1,125 @@
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 22vw; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 15px;
+    text-align: center;
+}
+
+
+/* sidenav picture */
+.profile-card {
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    border-radius: 10%;
+    border: 1px solid #818181;
+}
+
+#sidenav-img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+figcaption {
+   color: rgb(255, 255, 255); 
+}
+
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.internal-links a:hover:not(.active) {
+    background-color: rgb(47, 79, 79);
+    color: #f1f1f1;
+}
+
+.profile-card:hover:not(.internal-links a) {
+    background-color: rgb(47, 79, 79);
+    border-style: inset;
+}
+
+.active:not(.internal-links a) {
+    background-color: rgb(31, 53, 53);
+    border-radius: 10%;
+    border-style: inset;
+}
+
+.internal-links a.active {
+    font-weight: bold;
+    color: rgb(218, 233, 233);
+    background-color: rgb(31, 53, 53);
+    border: 1px inset #818181;
+}
+
+
+/* Social links */
+
+.socials-container img {
+    display: inline-block;
+}
+
+.socials-container a:hover {
+    color: #f1f1f1;
+}
+
+
+/* Style page content */
+body {
+    background-color: rgb(47, 79, 79);
+}
+
+.main {
+    margin-left: 22vw; /* Same as the width of the sidebar */
+    padding: 10px 10px 0 10px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 13px;}
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+    .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    top: 0;
+    }
+    .sidenav a {
+        display: inline-block;
+        font-size: 17px;
+    }
+    .main {
+        margin-left: 0;
+    }
+    .profile-card {
+        margin: auto;
+        padding: 5px;
+        width: 100%;
+    }
+    #sidenav-img {
+        display: none;
+    }
+    .profile-card figcaption {
+        margin: auto;
+        justify-content: center;
+        vertical-align: middle;
+    }
+}
