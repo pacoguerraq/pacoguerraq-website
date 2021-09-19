@@ -1,0 +1,35 @@
+.main {
+    text-align: center;
+}
+
+#main-img {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Título con efecto */
+h1 {
+    color: #fff;
+    font-size: 50px;
+    border-right: 0.1em solid;
+    margin: auto;
+    width: 16ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(27, end),
+        cursor-blink 0.5s step-end infinite alternate;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+@keyframes cursor-blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+p {
+    font-size: 20px;
+}
