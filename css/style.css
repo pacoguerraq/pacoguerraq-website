@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 /* The sidebar menu */
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -42,17 +47,17 @@ figcaption {
 }
 
 .internal-links a:hover:not(.active) {
-    background-color: rgb(47, 79, 79);
+    background-color: rgb(31, 53, 53);
     color: #f1f1f1;
 }
 
 .profile-card:hover:not(.internal-links a) {
-    background-color: rgb(47, 79, 79);
+    background-color: rgb(31, 53, 53);
     border-style: inset;
 }
 
 .active:not(.internal-links a) {
-    background-color: rgb(31, 53, 53);
+    background-color: rgb(47, 79, 79);
     border-radius: 10%;
     border-style: inset;
 }
@@ -60,8 +65,7 @@ figcaption {
 .internal-links a.active {
     font-weight: bold;
     color: rgb(218, 233, 233);
-    background-color: rgb(31, 53, 53);
-    border: 1px inset #818181;
+    background-color: rgb(47, 79, 79);
 }
 
 
