@@ -86,8 +86,8 @@ body {
 }
 
 .main {
-    margin-left: 22vw; /* Same as the width of the sidebar */
-    padding: 10px 10px 0 10px;
+    margin: 0px 0px 0px 22vw; /* Same as the width of the sidebar */
+    padding: 0px;
 }
 
 

@@ -1,0 +1,48 @@
+.main {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(47, 79, 79);
+}
+
+.top-content {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: #fff;
+    font-size: 50px;
+    margin: 0;
+    padding: 2vh 0;
+}
+
+p {
+    font-size: 150%;
+    color: rgb(211, 211, 211);
+    margin: 0;
+}
+
+.container-boxes {
+    margin: 5vh 0;
+}
+
+.box {
+    /* appearance */
+	background-color: #af6901;
+	color:#000000;
+	box-sizing: border-box;
+    /* measurements */
+    width: 30%;
+    height: auto;
+	display:inline-block;
+	border: 5px solid #000000;
+	padding: 10px 4%;
+    margin: 0 1vw;
+    border-radius: 20px;
+}
+
+.box h2 {
+    font-size: 130%;
+}
